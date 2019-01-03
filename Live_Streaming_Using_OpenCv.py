@@ -12,3 +12,7 @@ url = "http://123.5668.325:8080/shot.png"
 geturl = requests.get(url)
 
 #url photo python load
+photoweb = geturl.content
+
+#photo binary (bytes) into byte array
+photobyte = bytearray(photoweb)
