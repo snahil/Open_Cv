@@ -16,3 +16,15 @@ photoweb = geturl.content
 
 #photo binary (bytes) into byte array
 photobyte = bytearray(photoweb)
+
+
+#bytearray convert into ID array
+
+imageid = np.array(photobyte)
+
+#image show
+
+cv2.imshow('welcome', frame)
+cv3.waitkey()
+cv2.destroyAllwindows()
+
