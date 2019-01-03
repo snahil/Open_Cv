@@ -20,7 +20,7 @@ photobyte = bytearray(photoweb)
 
 #bytearray convert into ID array
 
-imageid = np.array(photobyte)
+image1d = np.array(photobyte)
 
 #image show
 
@@ -28,3 +28,16 @@ cv2.imshow('welcome', frame)
 cv3.waitkey()
 cv2.destroyAllwindows()
 
+
+while True:
+    
+    geturl = requests.get(url)
+    photoweb = geturl.content
+    photobyte = bytearray(photoweb)
+    image1d = np.array(photobyte)
+    frame = cv2.indecode(image1d, -1)
+    cv2.imshow('welcome', frame)
+    if = cv2.waitkey(1) == 13
+        break
+
+    
